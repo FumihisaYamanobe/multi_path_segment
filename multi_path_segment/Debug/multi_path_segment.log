@@ -1,0 +1,51 @@
+﻿2014/04/28 14:51:18 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\multi_path_segment.vcxproj" (Rebuild ターゲット)。
+     1>_PrepareForClean:
+         ファイル "Debug\multi_path_segment.lastbuildstate" を削除しています。
+       InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\multi_path_segment.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt aodv.cpp channelSignal.cpp MA.cpp mac.cpp node.cpp packtFrame.cpp rand.cpp rand2.cpp receive.cpp scenario.cpp simu.cpp TCP_UDP.cpp timeout.cpp
+         timeout.cpp
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\timeout.cpp(142): warning C4244: '=' : 'unsigned long' から 'short' への変換です。データが失われる可能性があります。
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\timeout.cpp(150): warning C4244: '引数' : 'unsigned long' から 'short' への変換です。データが失われる可能性があります。
+         TCP_UDP.cpp
+         simu.cpp
+         scenario.cpp
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\scenario.cpp(72): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\scenario.cpp(73): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\scenario.cpp(111): warning C4244: '引数' : 'unsigned long' から 'short' への変換です。データが失われる可能性があります。
+         receive.cpp
+         rand2.cpp
+         rand.cpp
+         packtFrame.cpp
+         node.cpp
+         mac.cpp
+         MA.cpp
+     1>c:\users\shiolab\dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\ma.cpp(251): warning C4244: '引数' : 'double' から 'int' への変換です。データが失われる可能性があります。
+         channelSignal.cpp
+         aodv.cpp
+         コードを生成中...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Debug\multi_path_segment.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Debug\multi_path_segment.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Debug\multi_path_segment.lib" /MACHINE:X86 Debug\aodv.obj
+         Debug\channelSignal.obj
+         Debug\MA.obj
+         Debug\mac.obj
+         Debug\node.obj
+         Debug\packtFrame.obj
+         Debug\rand.obj
+         Debug\rand2.obj
+         Debug\receive.obj
+         Debug\scenario.obj
+         Debug\simu.obj
+         Debug\TCP_UDP.obj
+         Debug\timeout.obj
+         multi_path_segment.vcxproj -> C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Debug\multi_path_segment.exe
+       FinalizeBuildStatus:
+         ファイル "Debug\multi_path_segment.unsuccessfulbuild" を削除しています。
+         "Debug\multi_path_segment.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\multi_path_segment.vcxproj" (Rebuild ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:06.80

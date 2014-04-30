@@ -651,10 +651,10 @@ void NODE::checkPacket(void){
 							pPtr->increSize(4);
 							pPtr->queue(sPtr, true);																//パケットをバッファの先頭へ挿入 
 							requestTime[dest] = now;													//ルートリクエスト送信時刻の設定
-							cout << "TCP transmission start." << endl; 
-							setPath1SegSize((short)TCPDEFAULTSIZE);											//path1とpath2のTCP初期セグメントサイズを設定
-							setPath2SegSize((short)TCPDEFAULTSIZE);
-							cout << getPath1SegSize() << " " << getPath2SegSize() <<endl;
+							//cout << "TCP transmission start." << endl; 
+							path1SegSize[dest] = TCPDEFAULTSIZE;
+							path2SegSize[dest] = TCPDEFAULTSIZE;
+							//cout << path1SegSize[dest] << " " << path2SegSize[dest] << endl;
 					//		//cout << "make packet --- " << now.dtime() << "\t" << id << "\t" << type << "\t" << dest << endl;
 						}
 						else
@@ -683,7 +683,7 @@ void NODE::checkPacket(void){
 								bufferPtr->increLength(path1[dest].size() * 4);
 								pathNum[dest] = 1;
 								pPtr->mpath_check = 1;
-								cout << "path1 Seg Size:" << getPath1SegSize() << endl;
+								cout << "path1 Seg Size:" << path1SegSize[dest] << endl;
 							//	cout << "path 1 利用！--" << now.dtime() <<  endl;
 							}
 							else if(pathNum[dest] == 1){
@@ -696,7 +696,7 @@ void NODE::checkPacket(void){
 								bufferPtr->increLength(path2[dest].size() * 4);
 								pathNum[dest] = 2;
 								pPtr->mpath_check = 2;
-								cout << "path2 Seg Size:" << getPath2SegSize() << endl;
+								cout << "path2 Seg Size:" << path2SegSize[dest] << endl;
 							//	cout << "path 2 利用！--" << now.dtime() << "\tdest:" << dest << "\ttype:" << getType() << endl;
 							}
 							else{

@@ -20,7 +20,7 @@ void main(int argc, char *argv[]){
 	//sgenrand((unsigned long)time(NULL));													//ノード移動以外用乱数初期化（時間変動させたい場合）
 	//sgenrand2((unsigned long)time(NULL));												//ノード移動用乱数初期化（時間変動させたい場合）
 	sgenrand(1);																					//ノード移動以外用乱数初期化（時間変動させたくない場合）
-	sgenrand2(5);																					//ノード移動用乱数初期化（時間変動させたくない場合）
+	sgenrand2(1);																					//ノード移動用乱数初期化（時間変動させたくない場合）
 	//if(argc == 2)
 	//	sgenrand2((atoi(argv[1]) - 1) % 20 + 1);																					//ノード移動用乱数初期化（時間変動させたくない場合）
 	//cout << atoi(argv[1]) << endl;
@@ -34,7 +34,7 @@ void main(int argc, char *argv[]){
 	//	simu.setRate(1.0);
 
 
-	simu.setRate(2.0);	
+	simu.setRate(2.5);	
 
 
 //	SIMU simu(SIMU::CIRCLE, SIMU::NORMAL);													//シミュレータオブジェクトの作成（円形エリア）
@@ -74,6 +74,8 @@ void main(int argc, char *argv[]){
 	for(int i = 0; i < simu.node.size(); i++){
 		for(int j = 0; j < simu.node.size(); j++){
 			simu.node[i]->pathNum.push_back(1);
+			simu.node[i]->path1SegSize.push_back(TCPDEFAULTSIZE);
+			simu.node[i]->path2SegSize.push_back(TCPDEFAULTSIZE);
 			simu.node[i]->path1[j].push_back(i);
 			simu.node[i]->path2[j].push_back(i);
 		}

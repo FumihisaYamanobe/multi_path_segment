@@ -141,7 +141,7 @@ bool TIMEOUT::process(void){
 			do{
 				dest = genrand2() % (sPtr->node.size() - 1); //destはランダム
 			}while(dest == id);
-//			cout << id << " TCP start " << now.dtime() << "\tdest " << dest << endl;
+			//cout << id << " TCP start " << now.dtime() << "\tdest:" << dest << endl;
 			TCP* tcp = new TCP(sPtr, id, now , 1000 * 1000);						//TCPエージェント（引数：ID，開始時刻，送信バイト数）
 			TCPSINK* tcpsink = new TCPSINK(sPtr, dest);											//TCPシンク（引数：ID）
 			tcp->connectSink(tcpsink);																	//エージェントとシンクの結合

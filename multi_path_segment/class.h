@@ -818,8 +818,6 @@ private:
 	LOCATION lastInformPos;																			//最近情報広告した位置
 	
 	mrgroup mgroup;    //マルチパス生成時のグループ
-	short path1SegSize;																				//path1の現在のセグメントサイズ
-	short path2SegSize;																				//path2の現在のセグメントサイズ
 
 //	int block;																							//通信切断による棄却フレーム数
 //	int retransfail;																					//再送上限による棄却フレーム数
@@ -916,12 +914,6 @@ public:
 		else cout << "??? LOCATION showGroupe at class.h" << endl,exit(1);
 	}
 	
-	//pathのセグメントサイズ関連
-	short getPath1SegSize(void){ return path1SegSize; }
-	void setPath1SegSize(short val){ path1SegSize = val; }
-	short getPath2SegSize(void){ return path2SegSize; }
-	void setPath2SegSize(short val){ path2SegSize = val; }
-
 
 //
 //	//_NODESET conNode;																					//隣接ノード
@@ -959,6 +951,8 @@ public:
 	vector<vector<short>> path1;																//マルチパス用１
 	vector<vector<short>> path2;																//マルチパス用２
 	vector<short> pathNum;																		//経路判断用
+	vector<short> path1SegSize;																				//path1の現在のセグメントサイズ
+	vector<short> path2SegSize;																				//path2の現在のセグメントサイズ
 	vector<SIMUTIME> requestTime;																	//各ノード宛ての経路探索パケット送信時刻
 	vector<int> floodSeq;																			//各ノードからのフラッディングシーケンス
 	vector<MA*> ma;																					//保持中モバイルエージェント

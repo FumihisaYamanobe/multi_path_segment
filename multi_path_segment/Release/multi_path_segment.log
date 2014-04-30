@@ -1,10 +1,12 @@
-﻿2014/04/29 16:28:38 にビルドを開始しました。
+﻿2014/04/30 18:07:29 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\multi_path_segment\multi_path_segment.vcxproj" (Build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "Release\multi_path_segment.unsuccessfulbuild" を作成しています。
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt node.cpp
-         node.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt timeout.cpp
+         timeout.cpp
+     1>timeout.cpp(142): warning C4244: '=' : 'unsigned long' から 'short' への変換です。データが失われる可能性があります。
+     1>timeout.cpp(150): warning C4244: '引数' : 'unsigned long' から 'short' への変換です。データが失われる可能性があります。
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Release\multi_path_segment.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Release\multi_path_segment.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ShioLab\Dropbox\大学\研究\2014年マルチパスのセグメントサイズ調整\multi_path_segment\Release\multi_path_segment.lib" /MACHINE:X86 /SAFESEH Release\aodv.obj
          Release\channelSignal.obj
@@ -29,4 +31,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:02.01
+経過時間 00:00:01.91
